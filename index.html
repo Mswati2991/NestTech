@@ -304,15 +304,11 @@
         <span class="tw" id="tw3">Me</span>
       </div>
 
-      <!-- Profile photo — served from GitHub -->
+      <!-- Profile photo — place Profilepic.jpg in the same folder as this HTML file -->
       <div class="hero-photo-wrap">
-        <img src="https://raw.githubusercontent.com/NestTech/NestTech/main/Profilepic.jpg"
-             alt="NestTech Support technician"
-             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-        <svg style="display:none;width:80px;height:80px;opacity:.35;" fill="none" viewBox="0 0 24 24">
-          <circle cx="12" cy="8" r="4" stroke="rgba(255,255,255,0.6)" stroke-width="1.5"/>
-          <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
+        <img id="profile-img"
+             src="Profilepic.jpg"
+             alt="NestTech Support technician" />
       </div>
 
       <h1>Supporting Homes and Businesses<br>Across London</h1>
@@ -701,6 +697,29 @@
     entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
   }, { threshold: 0.12 });
   document.querySelectorAll('.fade-up').forEach(function(el) { observer.observe(el); });
+
+  /* ── Profile photo fallback chain ── */
+  (function() {
+    var img = document.getElementById('profile-img');
+    if (!img) return;
+    var srcs = [
+      'Profilepic.jpg',
+      'profilepic.jpg',
+      'profile.jpg',
+      'https://raw.githubusercontent.com/NestTech/NestTech/main/Profilepic.jpg',
+      'https://raw.githubusercontent.com/NestTech/NestTech/master/Profilepic.jpg'
+    ];
+    var i = 0;
+    img.onerror = function() {
+      i++;
+      if (i < srcs.length) { img.src = srcs[i]; }
+      else {
+        img.style.display = 'none';
+        img.parentNode.insertAdjacentHTML('beforeend','<svg style="width:72px;height:72px;opacity:.32;" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" stroke="rgba(255,255,255,.7)" stroke-width="1.5"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="rgba(255,255,255,.7)" stroke-width="1.5" stroke-linecap="round"/></svg>');
+      }
+    };
+    img.src = srcs[0];
+  })();
 
   /* ── Animated tagline ── */
   (function() {
