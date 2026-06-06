@@ -307,8 +307,7 @@
       <div class="hero-tagline-anim" aria-label="No Tickets, Just Me" role="heading" aria-level="2">
         <span class="tw" id="tw0">No</span>
         <span class="tw" id="tw1">Tickets,</span>
-        <span class="tdiv" id="tdiv"></span>
-        <span class="tw" id="tw2">Just</span>
+        <span class="tdiv" id="tdiv"></span><span class="tw" id="tw2" style="-webkit-text-fill-color:transparent;margin-left:-6px;">Just</span>
         <span class="tw" id="tw3">Me</span>
       </div>
 
@@ -729,7 +728,7 @@
 
   /* Animated tagline */
   (function() {
-    var delays = { tw0: 160, tw1: 470, tdiv: 660, tw2: 810, tw3: 1120 };
+    var delays = { tw0: 300, tw1: 300, tdiv: 99999, tw2: 2300, tw3: 2300 };
     Object.keys(delays).forEach(function(id) {
       setTimeout(function() {
         var el = document.getElementById(id);
