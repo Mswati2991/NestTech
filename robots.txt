@@ -1,0 +1,32 @@
+# NestTech Support — robots.txt
+# Standard search engines: fully allowed
+User-agent: *
+Allow: /
+
+# AI / LLM crawlers: explicitly welcomed so assistants like ChatGPT, Claude,
+# Perplexity and Google's AI features can read and cite this site.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://nesttechsupport.com/sitemap.xml

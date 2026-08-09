@@ -1,0 +1,28 @@
+# NestTech Support
+
+> 1-to-1 IT support for homes and small businesses across London. Direct, jargon-free help delivered by the same dedicated engineer every time, no call centres, no ticket queues.
+
+NestTech Support is a sole-trader IT support business run by Tim, covering Greater London (zones 1-5) with remote support available UK-wide.
+
+## Services
+- Home & Family IT: Wi-Fi installation, device setup, everyday troubleshooting
+- Business & SME Support: ongoing or one-off IT cover for small and home-based businesses
+- Security Services: cybersecurity assessments, antivirus, firewalls
+- Cloud & Data: backup strategy, cloud storage, data recovery
+- Smart Home & Office: smart device integration, home-office setup
+
+## Pricing
+- Remote support: from £45
+- On-site visits: from £75
+- Free, no-obligation quote before any work begins
+
+## Coverage
+- Zones 1-2: Central London
+- Zones 2-3: Inner London
+- Zones 4-5: Outer London
+- Remote support: UK-wide
+
+## Contact
+- Phone: 0203 488 1396
+- Email: hello@nesttechsupport.co.uk
+- Website: https://nesttechsupport.com
