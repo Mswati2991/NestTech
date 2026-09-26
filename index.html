@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ECBN1ZZJ3J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-ECBN1ZZJ3J');
-</script>
+<!-- Google tag (gtag.js) is loaded conditionally by cookie-consent.js, only after the visitor accepts analytics cookies -->
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>NestTech Support | 1 to 1 IT Support Across London</title>
@@ -33,7 +26,7 @@
   "telephone": "+442034881396",
   "email": "hello@nesttechsupport.co.uk",
   "image": "https://nesttechsupport.com/Profilepic.jpg",
-  "address": { "@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB" },
+  "address": { "@type": "PostalAddress", "streetAddress": "124 City Road", "addressLocality": "London", "postalCode": "EC1V 2NX", "addressCountry": "GB" },
   "areaServed": [
     { "@type": "City", "name": "London" },
     { "@type": "Country", "name": "United Kingdom" }
@@ -85,6 +78,8 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
 <link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" href="cookie-consent.css" />
+<script src="cookie-consent.js" defer></script>
 
 <style>
   :root {
@@ -342,8 +337,12 @@
   .footer-links ul { display: flex; flex-direction: column; gap: 10px; }
   .footer-links a { color: var(--body-d); font-size: .87rem; transition: color .15s; }
   .footer-links a:hover { color: var(--amber); }
+  .footer-links ul li { color: var(--body-d); font-size: .87rem; }
   .footer-bottom { border-top: 1px solid var(--edge); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
   .footer-bottom p { color: rgba(255,255,255,.32); font-size: .8rem; }
+  .footer-legal { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .footer-legal a, .footer-legal button { color: rgba(255,255,255,.32); font-size: .8rem; background: none; border: none; padding: 0; cursor: pointer; font-family: inherit; transition: color .15s; }
+  .footer-legal a:hover, .footer-legal button:hover { color: var(--amber); }
 
   /* ============ FADE-UP ============ */
   .fade-up { opacity: 0; transform: translateY(20px); transition: opacity .55s ease, transform .55s ease; }
@@ -793,12 +792,18 @@
         <ul>
           <li><a href="tel:02034881396">0203 488 1396</a></li>
           <li><a href="mailto:hello@nesttechsupport.co.uk">hello@nesttechsupport.co.uk</a></li>
+          <li>124 City Road, London, EC1V 2NX</li>
           <li><a href="#contact">Get a Free Quote</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; <span id="year"></span> NestTech Support. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="cookie-policy.html">Cookie Policy</a>
+        <button type="button" id="manage-cookies-btn">Manage Cookies</button>
+      </div>
       <p>London-wide · Remote &amp; on-site</p>
     </div>
   </div>
