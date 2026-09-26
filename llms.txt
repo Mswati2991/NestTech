@@ -10,6 +10,7 @@ NestTech Support is a sole-trader IT support business run by Tim, covering Great
 - Security Services: cybersecurity assessments, antivirus, firewalls
 - Cloud & Data: backup strategy, cloud storage, data recovery
 - Smart Home & Office: smart device integration, home-office setup
+- AI Setup & Training: setup and hands-on training for AI tools like ChatGPT, Copilot and Gemini, for homes and small businesses
 
 ## Pricing
 - Remote support: from £45
