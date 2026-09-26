@@ -202,6 +202,15 @@
   .split-card-amber h3 { font-size: clamp(1.35rem, 2.6vw, 1.7rem); margin-bottom: 14px; }
   .split-card-amber p { color: rgba(11,42,77,.72); font-size: .98rem; margin-bottom: 18px; }
   .split-illustration { position: absolute; inset: 0; }
+  .split-visual-caption { position: absolute; left: 20px; right: 20px; bottom: 20px; z-index: 2; padding: 16px 20px; border-radius: 14px; }
+  .split-visual-caption .tag { display: flex; align-items: center; gap: 6px; font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 6px; }
+  .split-visual-caption p { font-size: .88rem; line-height: 1.5; margin: 0; }
+  .split-visual-caption.on-dark { background: rgba(9,13,24,.55); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+  .split-visual-caption.on-dark .tag { color: var(--amber); }
+  .split-visual-caption.on-dark p { color: rgba(255,255,255,.85); }
+  .split-visual-caption.on-light { background: rgba(255,255,255,.78); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+  .split-visual-caption.on-light .tag { color: var(--amber-dark); }
+  .split-visual-caption.on-light p { color: var(--body-l); }
 
   /* ============ HALFTONE IMPACT BAND ============ */
   .impact-band { position: relative; background: var(--ink); min-height: 380px; display: flex; align-items: flex-end; overflow: hidden; padding: 0; }
@@ -432,6 +441,10 @@
               <circle cx="90" cy="90" r="46" fill="none"/>
             </g>
           </svg>
+          <div class="split-visual-caption on-dark">
+            <div class="tag"><span class="dot" style="width:6px;height:6px;border-radius:50%;background:var(--amber);display:inline-block;"></span>AI Training</div>
+            <p>Confident, safe use of ChatGPT, Copilot &amp; Gemini, set up and taught in plain English.</p>
+          </div>
         </div>
         <div class="split-card-paper">
           <h3><mark class="hl-amber">Wi-Fi &amp; Networking:</mark> Fewer dead spots, faster everything.</h3>
@@ -458,6 +471,10 @@
             <circle cx="380" cy="150" r="8" fill="#22D3B0"/>
             <circle cx="395" cy="200" r="5" fill="#FFC93C"/>
           </svg>
+          <div class="split-visual-caption on-light">
+            <div class="tag"><span class="dot" style="width:6px;height:6px;border-radius:50%;background:var(--amber-dark);display:inline-block;"></span>Security Services</div>
+            <p>Firewalls, antivirus and real protection, set up properly and kept up to date.</p>
+          </div>
         </div>
       </div>
     </div>
